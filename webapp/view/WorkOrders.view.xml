@@ -1,8 +1,8 @@
-<mvc:View controllerName="com.gv.hackathon.Hackathon3.controller.Authorization" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+<mvc:View controllerName="com.gv.hackathon.Hackathon3.controller.WorkOrders" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" displayBlock="true" xmlns="sap.m" xmlns:vk="sap.ui.vk">
 	<SplitApp id="SplitAppContainer" initialDetail="detail" initialMaster="master" orientationChange="onOrientationChange">
 		<detailPages>
-			<Page id="detail" title="Details" class="sapUiStdPage">
+			<Page id="detail" title="Details" class="sapUiStdPage" showNavButton="true" navButtonPress="onBackToAuthorization" >
 				<content>
 					<ObjectHeader id="orderHeader" icon="sap-icon://machine" iconDensityAware="false" iconAlt="{Id}" title="{Id}" number="{Equipment}">
 						<statuses>
@@ -46,7 +46,7 @@
 						<items>
 							<ObjectListItem title="{Id}" number="{Equipment}">
 								<firstStatus>
-									<ObjectStatus text="{ path: 'Priority' }" state="{ path: 'Priority', formatter: '.formatter.priority' }"/>
+									<ObjectStatus text="{ path: 'Priority' }" state="{ path: 'Priority', formatter: '.priorityFormatter' }"/>
 								</firstStatus>
 								<attributes>
 									<ObjectAttribute text="{RequestDate}"/>

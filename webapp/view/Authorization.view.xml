@@ -2,9 +2,13 @@
 	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
-			<Page title="{i18n>title}">
+			<Page title="Security Measures Check">
 				<content>
-					<Button text="Login" press="onNavToSplit"></Button>
+					<VBox alignItems="Center" justifyContent="Center">
+						<MessageStrip text="You have not yet performed the security measures check. Proceed to the check in order to access the App" type="Warning"
+							showIcon="true" showCloseButton="false" class="sapUiMediumMarginBottom sapUiMediumMarginTop"></MessageStrip>
+						<Button text="Perform Check" press="onNavToSplit"></Button>
+					</VBox>
 				</content>
 			</Page>
 		</pages>

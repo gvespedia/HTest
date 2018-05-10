@@ -80,15 +80,15 @@
 			},
 			"routes": [{
 				"pattern": "",
-				"name": "home",
-				"target": "homeApp"
+				"name": "authorization",
+				"target": "authorizationApp"
 			}, {
 				"pattern": "0",
 				"name": "workorders",
 				"target": "WorkOrdersView"
 			}],
 			"targets": {
-				"homeApp": {
+				"authorizationApp": {
 					"viewName": "Authorization",
 					"viewLevel": 1
 				},
