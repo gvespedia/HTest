@@ -2,6 +2,17 @@
 	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
+			<MessagePage showHeader="false" text="Security Check Warning" enableFormattedText="true"
+				description="You have not yet performed the security measures check. 
+				Proceed to the check in order to access the App.
+				&lt;a target='_blank' 
+				href='http://www.ilo.org/global/standards/subjects-covered-by-international-labour-standards/employment-security/lang--en/index.htm'&gt;
+				Learn more about safety regulations&lt;/a&gt;"
+				icon="sap-icon://message-warning">
+				<buttons>
+					<Button text="Perform Check" press="onNavToSplit"/>
+				</buttons>
+			</MessagePage>
 			<Page title="Security Measures Check">
 				<content>
 					<VBox alignItems="Center" justifyContent="Center">
