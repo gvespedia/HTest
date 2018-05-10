@@ -19,6 +19,10 @@ sap.ui.define([
 			var sPath = oEvent.getParameter("listItem").getBindingContext().sPath;
 			var header = this.byId("orderHeader");
 			header.bindElement(sPath);
+			var infoForm = this.byId("infoForm");
+			infoForm.bindElement(sPath);
+			debugger;
+			//sap.ui.getCore().byId("myList").getBinding("items").refresh();
 		},
 
 		onBackToAuthorization: function(oEvent) {
@@ -28,13 +32,17 @@ sap.ui.define([
 		
 		priorityFormatter: function(prior) {
 			if (prior === "High") {
-				return "Error";
+				//return "Error";
+				return sap.ui.core.ValueState.Error;
 			} else if (prior === "Medium") {
-				return "Warning";
+				//return "Warning";
+				return sap.ui.core.ValueState.Warning;
 			} else if (prior === "Low") {
-				return "Success";
+				//return "Success";
+				return sap.ui.core.ValueState.Success;
 			} else {
-				return "None";
+				//return "None";
+				return sap.ui.core.ValueState.None;
 			}
 		}
 

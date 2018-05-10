@@ -6,7 +6,11 @@
 			"RequestDate": "05/07/2018",
 			"Type": "Repair",
 			"RequestedBy": "Antonio Rossi",
-			"ExpectedStartDate": "09/07/2018"
+			"ExpectedStartDate": "09/07/2018",
+			"ExpectedEndDate": "12/08/2018",
+			"WorkCntr": "WA410",
+			"Status": "In Progress",
+			"RootCause": "Overdue maintenance"
 		}, {
 			"Id": "Test2",
 			"Equipment": "789656",
@@ -14,7 +18,11 @@
 			"RequestDate": "02/07/2018",
 			"Type": "Check",
 			"RequestedBy": "Luca Neri",
-			"ExpectedStartDate": "12/07/2018"
+			"ExpectedStartDate": "12/07/2018",
+			"ExpectedEndDate": "04/08/2018",
+			"WorkCntr": "WA410",
+			"Status": "In Progress",
+			"RootCause": "Critical failure"
 		}, {
 			"Id": "Ord3",
 			"Equipment": "789656",
@@ -22,7 +30,11 @@
 			"RequestDate": "21/04/2018",
 			"Type": "Maintenance",
 			"RequestedBy": "Marco Bianchi",
-			"ExpectedStartDate": "09/05/2018"
+			"ExpectedStartDate": "09/05/2018",
+			"ExpectedEndDate": "22/05/2018",
+			"WorkCntr": "WA410",
+			"Status": "Open",
+			"RootCause": "Wear and tear"
 		}, {
 			"Id": "Ord4",
 			"Equipment": "789656",
@@ -30,7 +42,11 @@
 			"RequestDate": "21/04/2018",
 			"Type": "Maintenance",
 			"RequestedBy": "Giuseppe Verdi",
-			"ExpectedStartDate": "10/05/2018"
+			"ExpectedStartDate": "10/05/2018",
+			"ExpectedEndDate": "12/05/2018",
+			"WorkCntr": "WA410",
+			"Status": "Open",
+			"RootCause": "Planned maintenance"
 		}
 
 	]
